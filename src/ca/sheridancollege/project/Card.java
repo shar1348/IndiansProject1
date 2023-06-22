@@ -1,5 +1,10 @@
 package ca.sheridancollege.project;
 
+/**
+ * @author Devanshi Sharma, Sukhpreet Ghuman, Khushbu Khushbu, Muskan Muskan and Tejas Chahal
+ * @date 21 June 2023
+ */
+
 public class Card {
     private String suit;
     private String rank;
