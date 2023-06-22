@@ -19,14 +19,18 @@ public class Card {
         return rank + " of " + suit;
     }
 
-    public int getValue() {
-        if (rank.equals("Ace")) {
-            return 11;
-        } else if (rank.equals("King") || rank.equals("Queen") || rank.equals("Jack")) {
-            return 10;
-        } else {
-            return Integer.parseInt(rank);
+   public int getValue() {
+        switch (rank) {
+            case "Ace":
+                return 11;
+            case "King":
+            case "Queen":
+            case "Jack":
+                return 10;
+            default:
+                return Integer.parseInt(rank);
         }
     }
 }
+
 
